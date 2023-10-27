@@ -32,8 +32,12 @@
 
 		<main>
 			<div id="current-menu">
-				<!-- <a href="" class="button" id="meal-link">MEAL PAGE LINK</a> -->
+				<!--meal  menu link made in JS goes here -->
+
+
 			</div>
+
+			
 
 			<h3>Amazing Coffee, Made To Order</h3>
 			<p>Order your coffee the way you like it. Everyone has different tastes, which can change at any time! We have a wide variety of drink options for you, but you can customize any of them. Don’t see something on the menu? Let us know what you want and we’ll do our best to make it for you!</p>
@@ -44,30 +48,7 @@
 		</main>
 	</div>
 
-	<script>
-		
-		let dateTime = new Date();
-		let hour = dateTime.getHours();
-		let linkText;
-		let linkHref;
-
-		if (hour < 11){
-			lenkText = 'breakfast';
-			linkHref = "'breakfast.html";
-		}else if(hour < (12+4)){
-			linkText = 'Lunch';
-			linkHref = 'lunch.html';
-		}else {
-			linkText = "Dinner";
-			linkHref = 'dinner.html';
-		};
-
-		let menuLink = document.createElement('a');
-		menuLink.innerHTML = linkText + 'Menu';
-		munuLink.href = linkHref;
-		menuLink.className = 'button';
-		document.getElementById('current-menu').appendChild(menuLink);
-
-	</script>
+	<script src="js\ground-up-timely-menu.js"></script>
+	
 </body>
 </html>
